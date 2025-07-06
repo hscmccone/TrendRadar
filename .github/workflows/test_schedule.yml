@@ -4,8 +4,8 @@ on:
   schedule:
     # 设置一个在几分钟后会触发的时间 (UTC)
     # 例如，如果现在是 UTC 13:00，你可以设置为 '5 13 * * *'
-    - cron: '58 12 * * *' # 为了测试，我们先用每5分钟一次
-    workflow_dispatch:
+    - cron: '02 13 * * *'
+  workflow_dispatch:
 
 jobs:
   test_job:
