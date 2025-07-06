@@ -2,7 +2,10 @@ name: Hot News Crawler
 
 on:
   schedule:
-    - cron: '*/300 * * * *'  # 每300分钟运行一次
+    #- cron: '*/300 * * * *'  # 每300分钟运行一次
+    # 0 分钟，在 1点, 7点, 14点 (UTC时间) 执行
+    # 分别对应北京时间 (UTC+8) 的 8:00, 15:00, 20:00
+    - cron: '0 0,7,12 * * *'
   workflow_dispatch:
 
   push:
