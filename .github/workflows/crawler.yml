@@ -5,6 +5,9 @@ on:
     - cron: '*/1 * * * *'  # 每50分钟运行一次
   workflow_dispatch:
 
+  push:
+    branches: [ main ]
+
 # 添加权限设置
 permissions:
   contents: write
